@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prosjekt</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -18,19 +20,61 @@
     </header>
 
     <main>
-    <div class="container">
-        <section>
-            <h2>Prosjekt</h2>
-            <h3>April</h3>
-            <p>Vi har jobbet kontinuerlig med å få opp systemet. Nå jobber vi med å få riktig data over til databasen.
-                Vi jobber nesten hver dag for at vi skal komme i mål.
-            </p>
-
-            <h3>---</h3>
-            <h3>---</h3>
-
-        </section>
-    </div>
-</main>
+        <div class="container">
+            <section>
+                <h2>Prosjekt</h2>
+                <h3>April</h3>
+                <p>Vi har jobbet kontinuerlig med å få opp systemet. Nå jobber vi med å få riktig data over til
+                    databasen.
+                    Vi jobber nesten hver dag for at vi skal komme i mål.
+                </p>
+                <br>
+                <h3>Mars</h3>
+                <p>
+                    I mars har gruppa opprettholdt de to faste møtene i uka, hver mandag og onsdag. I tillegg har vi
+                    fortsatt hatt statusmøter med
+                    Novari IKS annenhver uke, samt en workshop der vi lærte om kodeteknikken Reflection som vi benytter
+                    for å lese av FINT-informasjonsmodellen.
+                    Reflection lar oss kunne se og/eller endre runtime-attributtene til klasser, grensesnitt eller
+                    metoder når vi ikke kjenner navnene deres når programmet
+                    kompileres. Med reflection kan vi også instansiere nye objekter, kalle på metoder og hente/sette
+                    verdier. Vi har brukt reflection til å hente navn på domener,
+                    komponenter og ressurser i informasjonsmodellen. Her er kodeeksempel der vi henter ut ressursnavn
+                    f.eks «Fakturautsteder». <br>
+                    Backend-delen av koden har fått nye endepunkter. Et av de bruker vi for å hente data fra frontend.
+                    Dette er data som hjelper oss å begrense hva
+                    vi henter fra informasjonsmodellen. For eksempel vil en bruker kunne velge «Arkiv»(noark??) og
+                    dermed kun få opp de ressursene som er innenfor den kategorien.
+                    Det andre endepunktet sender ressursene tilbake til frontend i form av et HashMap som holder styr på
+                    om en bruker har tilgang til en ressurs eller ikke. <br>
+                    I frontend arbeides det med å utbedre nettsiden og i størst mulig grad lage den etter malen vi har
+                    fått av Novari IKS. <br>
+                    Mandag 11. mars hadde vi statuspresentasjon der vi fortalte om fremgangen i prosjektet så langt.
+                </p>
+                <br>
+                <h3>Februar</h3>
+                <p>
+                    Mesteparten av februar gikk med til planlegging av prosjektet. Vi har hatt en god dialog med en av
+                    våre kontakter i Novari IKS, Trond Magnus Sevre om datamodeller vi har laget og hvordan vi kan gjøre
+                    de best mulig.<br>
+                    Viktigheten av gode datamodeller er satt i fokus ettersom Novari IKS ønsker seg muligheten til å
+                    arbeide videre med løsningen etter prosjektslutt. Vi har hatt en iterativ tilnærming til
+                    datamodellene, noe som har
+                    ført til at vi brukte mer tid enn planlagt på planleggingsfasen av prosjektet. <br>
+                    Da vi var fornøyde med datamodellene tok vi «det første spadetaket» i prosjektets utviklingsfase. I
+                    backend har vi nå satt opp vår første restcontroller i Spring boot (kodeeksempel kommer), som lar
+                    oss hente data lagret i en PostgreSQL database. Denne dataen får vi deretter frem i frontend. <br>
+                    Frontend har fått en mal fra Novari IKS med deres ønskede webdesign. Dermed er vi nå i gang med å
+                    lage nettsidens utseende etter beste evne. <br>
+                    Til nå har vi merket at både Remix og Spring boot er krevende, ettersom det er relativt nytt for
+                    oss. Dermed tar programmeringen litt ekstra tid nå i starten, men vi regner med at det blir bedre
+                    etter hvert som vi blir mer vandt med teknologien.<br>
+                    Vi har også utarbeidet en prosjektbeskrivelse i samarbeid med Novari IKS og presentert oppgaven i
+                    plenum den 12. februar.
+                </p>
+            </section>
+        </div>
+    </main>
 </body>
+
 </html>
