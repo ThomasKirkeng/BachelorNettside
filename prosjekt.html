@@ -6,74 +6,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prosjekt</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="patternizer.js"></script>
+
 </head>
 
+<canvas id="bakgrunn"></canvas>
+
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Hjem</a></li>
                 <li><a href="omoss.html">Om oss</a></li>
-                <li><a href="prosjekt.html">Prosjekt</a></li>
+                <li><a href="prosjekt.html">Prosjektblogg</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <div class="container">
-            <section>
-                <h2>Prosjekt</h2>
-                <h3>April</h3>
-                <p>Vi har jobbet kontinuerlig med å få opp systemet. Nå jobber vi med å få riktig data over til
-                    databasen.
-                    Vi jobber nesten hver dag for at vi skal komme i mål.
-                </p>
-                <br>
-                <h3>Mars</h3>
-                <p>
-                    I mars har gruppa opprettholdt de to faste møtene i uka, hver mandag og onsdag. I tillegg har vi
-                    fortsatt hatt statusmøter med
-                    Novari IKS annenhver uke, samt en workshop der vi lærte om kodeteknikken Reflection som vi benytter
-                    for å lese av FINT-informasjonsmodellen.
-                    Reflection lar oss kunne se og/eller endre runtime-attributtene til klasser, grensesnitt eller
-                    metoder når vi ikke kjenner navnene deres når programmet
-                    kompileres. Med reflection kan vi også instansiere nye objekter, kalle på metoder og hente/sette
-                    verdier. Vi har brukt reflection til å hente navn på domener,
-                    komponenter og ressurser i informasjonsmodellen. Her er kodeeksempel der vi henter ut ressursnavn
-                    f.eks «Fakturautsteder». <br><br>
-                    Backend-delen av koden har fått nye endepunkter. Et av de bruker vi for å hente data fra frontend.
-                    Dette er data som hjelper oss å begrense hva
-                    vi henter fra informasjonsmodellen. For eksempel vil en bruker kunne velge «Arkiv» og
-                    dermed kun få opp de ressursene som er innenfor den kategorien.
-                    Det andre endepunktet sender ressursene tilbake til frontend i form av et HashMap som holder styr på
-                    om en bruker har tilgang til en ressurs eller ikke. <br><br>
-                    I frontend arbeides det med å utbedre nettsiden og i størst mulig grad lage den etter malen vi har
-                    fått av Novari IKS. <br><br>
-                    Mandag 11. mars hadde vi statuspresentasjon der vi fortalte om fremgangen i prosjektet så langt.
-                </p>
-                <br>
-                <h3>Februar</h3>
-                <p>
-                    Mesteparten av februar gikk med til planlegging av prosjektet. Vi har hatt en god dialog med en av
-                    våre kontakter i Novari IKS, Trond Magnus Sevre om datamodeller vi har laget og hvordan vi kan gjøre
-                    de best mulig.<br><br>
-                    Viktigheten av gode datamodeller er satt i fokus ettersom Novari IKS ønsker seg muligheten til å
-                    arbeide videre med løsningen etter prosjektslutt. Vi har hatt en iterativ tilnærming til
-                    datamodellene, noe som har
-                    ført til at vi brukte mer tid enn planlagt på planleggingsfasen av prosjektet. <br><br>
-                    Da vi var fornøyde med datamodellene tok vi «det første spadetaket» i prosjektets utviklingsfase. I
-                    backend har vi nå satt opp vår første restcontroller i Spring boot (kodeeksempel kommer), som lar
-                    oss hente data lagret i en PostgreSQL database. Denne dataen får vi deretter frem i frontend.
-                    <br><br>
-                    Frontend har fått en mal fra Novari IKS med deres ønskede webdesign. Dermed er vi nå i gang med å
-                    lage nettsidens utseende etter beste evne. <br><br>
-                    Til nå har vi merket at både Remix og Spring boot er krevende, ettersom det er relativt nytt for
-                    oss. Dermed tar programmeringen litt ekstra tid nå i starten, men vi regner med at det blir bedre
-                    etter hvert som vi blir mer vandt med teknologien.<br><br>
-                    Vi har også utarbeidet en prosjektbeskrivelse i samarbeid med Novari IKS og presentert oppgaven i
-                    plenum den 12. februar.
-                </p>
-            </section>
+        <div class="wrapper">
+            <h1 class="hvilkenside">Prosjektblogg</h1>
+            <div class="container">
+                <section>
+                    <h3>Mai</h3>
+                    <p>Innspurten!!
+                        woooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+                        ooooooooooooooooooooooooooooooooooooo </br></br>
+                        Testing</br></br>
+                        Ferdigstilling</br></br>
+                        Rapportskriving
+                    </p>
+                    <br>
+                </section>
+            </div>
+            <div class="container">
+                <section>
+                    <h3>April</h3>
+                    <p>Nå begynner det å nærme seg at prosjektet skal leveres! April har forsvunnet i en fei, men vi
+                        har jobbet kontinuerlig og fått gjort mye.
+                        Møtene innad i gruppa har gått fra to til fire/fem i uka. I tillegg har vi hatt statusmøter med
+                        Novari
+                        IKS og en workshop tirsdag 30. april der vi lærte om Apache Kafka og hvordan vi kunne prøve å
+                        bruke det i vår løsning. <br><br>
+                        KAFKA eksempel
+                        <br><br>
+                        I løpet av april har vi koblet sammen frontend og backend. Det var ikke så enkelt som vi antok
+                        og vi måtte bruke mye tid på dette.
+                        Vi fikk etter hvert sammenkoblingen til og nå henger løsningen sammen. Det vil si at når en
+                        bruker velger et domene
+                        i brukergrensesnittet, vil tilhørende pakker dukke opp. I det brukeren trykker på en pakke,
+                        dukker ressursene opp i form av checkboxes man kan huke av. Brukergrensesnittet skal helst kjøre
+                        så lett som mulig, derfor gjør vi mest muligdatabehandling i backend. Der leses alt av ressurser
+                        fra
+                        FINT. Koden er generisk slik at den skal fungere dersom det skjer endringer i FINT-modellen i
+                        fremtiden.<br><br>
+                        Vi har også fått til å sende riktig data over til databasen. Det vil si at vi kan lage en
+                        bruker i frontend, og lagre den brukeren med tilhørende tilganger i PostgreSQL databasen
+                        vår.<br><br>
+                        KODEEKSEMPEL HER
+                        <br><br>
+                        Mandag 22. april hadde vi siste statuspresentasjon for medstudenter og emneansvarlig.
+                    </p>
+                    <br>
+                </section>
+            </div>
+            <div class="container">
+                <section>
+                    <h3>Mars</h3>
+                    <p>
+                        I mars har gruppa opprettholdt de to faste møtene i uka, hver mandag og onsdag. I tillegg har vi
+                        fortsatt hatt statusmøter med
+                        Novari IKS annenhver uke, samt en workshop der vi lærte om kodeteknikken «reflection» som vi
+                        benytter
+                        for å lese av FINT-informasjonsmodellen.
+                        Reflection lar oss kunne se og/eller endre runtime-attributtene til klasser, grensesnitt eller
+                        metoder når vi ikke kjenner navnene deres når programmet
+                        kompileres. Med reflection kan vi også instansiere nye objekter, kalle på metoder og hente/sette
+                        verdier. Vi har brukt reflection til å hente navn på domener,
+                        komponenter og ressurser i informasjonsmodellen. <br><br>
+                        Her følger et kodeeksempel der vi henter ut alle
+                        ressurser i en komponent/pakke fra FINT ved å bruke reflection. Vi legger til navnet på en
+                        ressurs (f.eks «Fakturautsteder») i et HashMap med en tilhørende boolsk
+                        verdi (en bruker kan senere endre denne verdien) og returnerer HashMappet. Dette mappes skal
+                        brukes til å lage en oversikt i frontend der en bruker kan velge om en tilgang skal gis eller
+                        ikke.
+
+                        <br>
+                    </p>
+                    <img src="images/Reflection_eksempel.png" alt="Eksempel på kodeteknikken Reflection">
+                    <p>
+                        Backend-delen av koden har fått nye endepunkter. Et av de bruker vi for å hente data fra
+                        frontend.
+                        Dette er data som hjelper oss å begrense hva
+                        vi henter fra informasjonsmodellen. For eksempel vil en bruker kunne velge «Arkiv» og
+                        dermed kun få opp de pakkene og ressursene som er innenfor det domenet.
+                        Det andre endepunktet sender ressursene tilbake til frontend i form av et HashMap som holder
+                        styr på
+                        om en bruker har tilgang til en ressurs eller ikke.
+                        <br><br>
+                        I frontend arbeides det med å utbedre nettsiden og i størst mulig grad lage den etter malen vi
+                        har
+                        fått av Novari IKS.
+                        <br><br>
+                        Mandag 11. mars hadde vi statuspresentasjon der vi fortalte om fremgangen i prosjektet så langt.
+                    </p>
+                    <br>
+                </section>
+            </div>
+            <div class="container">
+                <section>
+                    <h3>Februar</h3>
+                    <p>
+                        Mesteparten av februar gikk med til planlegging av prosjektet. Vi har hatt en god dialog med en
+                        av
+                        våre kontakter i Novari IKS, Trond Magnus Sevre om datamodeller vi har laget og hvordan vi kan
+                        gjøre
+                        de best mulig. Figuren under viser et ER-diagram som forteller hvordan vi har tenkt å modellere
+                        databasen vår.
+                        <br><br>
+                    </p>
+                    <img src="images/ER_diagram.png" alt="ER-diagram" id="ER-diagram">
+                    <p>
+                        Viktigheten av gode datamodeller er satt i fokus ettersom Novari IKS ønsker seg muligheten til å
+                        arbeide videre med løsningen etter prosjektslutt. Vi har hatt en iterativ tilnærming til
+                        datamodellene, noe som har ført til at vi brukte mer tid enn planlagt på planleggingsfasen av
+                        prosjektet.
+                        <br><br>
+                        Da vi var fornøyde med datamodellene tok vi «det første spadetaket» i prosjektets
+                        utviklingsfase. I
+                        backend har vi nå satt opp vår første restcontroller i Spring boot (kodeeksempelet under), som
+                        lar
+                        oss hente data lagret i en PostgreSQL database. Denne dataen får vi deretter frem i frontend.
+                        <br>
+                    </p>
+                    <img src="images/første_endepunkt.png" alt="Vårt første endepunkt">
+                    <p>
+                        Frontend har fått en mal fra Novari IKS med deres ønskede webdesign. Dermed er vi nå i gang med
+                        å
+                        lage nettsidens utseende etter beste evne.
+                        <br><br>
+                        Til nå har vi merket at både Remix og Spring boot er krevende, ettersom det er relativt nytt for
+                        oss. Dermed tar programmeringen litt ekstra tid nå i starten, men vi regner med at det blir
+                        bedre
+                        etter hvert som vi blir mer vandt med teknologien.
+                        <br><br>
+                        Vi har også utarbeidet en prosjektbeskrivelse i samarbeid med Novari IKS og presentert oppgaven
+                        i
+                        plenum den 12. februar.
+                    </p>
+                </section>
+            </div>
+            <div class="container">
+                <section>
+                    <h3>Januar</h3>
+                    <p>
+                        Vi er helt i startfasen av prosjektet og har hatt dialog med flere bedrifter om mulig
+                        bacheloroppgave. Novari IKS har gitt oss tre gode forslag til oppgave og vi har bestemt oss for
+                        å
+                        velge en av dem ettersom opgaven er svært relevant for det raskt ankommende
+                        arbeidslivet.<br><br>
+                        Fredag 26. januar hadde vi et innledende nettmøte med Maria Forsberg Kristoffersen og Trond
+                        Magnus
+                        Sevre fra Novari IKS. Maria er produkteier og Trond er veilederen vi kan stille tekniske
+                        spørmål til etter hvert som de dukker opp.<br><br>
+                        Novari IKS er veldig interreserte i å få til en bra løsning som de kan ta inspirasjon fra eller
+                        eventuelt
+                        videreutvikle når vi har gjort vårt. Det er også
+                        veldig gøy for oss i gruppen med en så engasjert oppdragsgiver. Det setter vi stor pris
+                        på!<br><br>
+                        Mandag 22. januar leverte vi inn en prosjektskisse. Denne ble godkjent, så nå er det bare å
+                        sette igang!
+                    </p>
+                </section>
+            </div>
+
         </div>
     </main>
 </body>

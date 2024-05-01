@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om oss</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="patternizer.js"></script>
 </head>
+
+<canvas id="bakgrunn"></canvas>
+
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Hjem</a></li>
                 <li><a href="omoss.html">Om oss</a></li>
-                <li><a href="prosjekt.html">Prosjekt</a></li>
+                <li><a href="prosjekt.html">Prosjektblogg</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-    <div class="container">
-        <section>
-            <h2>Om oss</h2>
-            <p>Vi er gruppe 4 for Bacheloroppgave i IT og Informasjonssystemer på Universitetet i Sør-Øst Norge, Campus Bø.
+        <div class="wrapper">
+            <h1 class="hvilkenside">Om oss</h1>
+            <div class="container">
+                <section>
+                    <p>Vi er gruppe 4 for Bacheloroppgave i IT og Informasjonssystemer ved Universitetet i Sør-Øst
+                        Norge,
+                        Campus Bø. <br><br>
 
-                Gruppen består av 5 studenter som har fått i oppgave av Novari IKS (tidligere Vigo IKS) å finvaske tilgangskontroll i FINT.
-                FINT står for Felles Fylkeskommunale Integrasjoner, og er et open-source system laget av Novari IKS, som brukes til å utveksle data mellom 
-                ulige fagsystemer. I FINT er det behov for en finmasket tilgangskontroll som gir brukere muligheten til å styre tilgang til ressurser på 
-                en mer detaljert måte enn før, og det er det som er vår oppgave å få til.
-                
-                For å løse oppgaven har vi gjennom vårt studieløp opparbeidet erfaring i en rekke teknologier. Relevant erfaring for denne oppgaven er Java, React, REST-APIer, arbeid med databaser og smidig metodikk. Dessuten har alle i gruppen samarbeidet på tidligere prosjekter og vi har dermet fått en god gruppedynamikk. Vi kjenner hverandres styrker og svakheter og er flinke til å støtte oppom hverandre dersom det trengs.</p>
-            
-            <img src="Legg til Bilde.png" alt="Group Photo">
-        </section>
-    </div>
+                        Gruppen består av 5 studenter fra forskjellige deler av landet. Alle i gruppen har samarbeidet
+                        på
+                        tidligere prosjekter og vi har dermet fått
+                        en
+                        god gruppedynamikk. Vi kjenner hverandres styrker og svakheter og er flinke til å støtte oppom
+                        hverandre dersom det trengs.
+                        <br><br>
 
-    <div class="container">
-        <section>
-        <h2>Medlemmer i gruppen</h2>
+                        For å løse oppgaven har vi gjennom vårt studieløp opparbeidet erfaring i en rekke teknologier.
+                        Relevant erfaring for denne oppgaven er Java, React, REST-APIer, arbeid med databaser og smidig
+                        metodikk. Vi ser frem til et spennende prosjekt med oppgave fra en reell bedrift som vil gi oss
+                        kjennskap til hittil ukjente teknologier.
+                    </p>
 
-            <p>Elias Kjøll Kristensen 23 år fra Stavanger</p>
-            <p>Thomas Kirkeng 24 år fra Kristiansand</p>
-            <p>Jesper Kraft 27 år fra Fredrikstad</p>
-            <p>Andreas Myrmo Kjørås 25 år fra Verdal</p>
-            <p>Andris Høiseth 22 år fra Valdres</p>
-            
-        </section>
-    </div>
-</main>
+
+                </section>
+            </div>
+
+            <div class="container" id="medlemmer">
+                <div id="gruppefoto">
+                    <img src="images/gruppe4.png" alt="Gruppebilde">
+                </div>
+                <div id="medlemtekst">
+                    <section>
+                        <h2 id="medlemheader">Gruppemedlemmer</h2>
+
+                        <p>Elias Kjøll Kristensen 23 år fra Stavanger</p>
+                        <p>Thomas Kirkeng 24 år fra Kristiansand</p>
+                        <p>Jesper Kraft 27 år fra Fredrikstad</p>
+                        <p>Andreas Myrmo Kjørås 25 år fra Verdal</p>
+                        <p>Andris Høiseth 22 år fra Valdres</p>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>

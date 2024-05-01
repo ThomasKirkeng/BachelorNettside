@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hovedside</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="patternizer.js"></script>
 </head>
+
+<canvas id="bakgrunn"></canvas>
+
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Hjem</a></li>
                 <li><a href="omoss.html">Om oss</a></li>
-                <li><a href="prosjekt.html">Prosjekt</a></li>
+                <li><a href="prosjekt.html">Prosjektblogg</a></li>
             </ul>
         </nav>
     </header>
-<main>
-    <div class="container">
-        <section>
-            <h2>Velkommen til oss</h2>
-            <p>Vi skriver bachelor for VIGO / Novari IKS</p>
-        </section>
-    </div>
+    <main>
+        <div class="wrapper">
+            <h1 class="hvilkenside">Velkommen til Gruppe 4s prosjektside</h1>
+            <div class="container">
+                <section>
+                    <p>Vi skriver bachelor for Novari IKS våren 2024!
+                        <br><br>
+                    </p>
+                    <img src="images/novari_logo.png" alt="Novari IKS logo" id="novarilogo">
+                    <p>
+                        Oppgaven vi har fått fra dem går ut på å
+                        finvaske tilgangskontroll i deres FINT-system.
+                        FINT står for Felles Fylkeskommunale Integrasjoner, og er et open-source system laget av Novari
+                        IKS
+                        som brukes til å utveksle data mellom ulike fagsystemer. I FINT er det behov for en finmasket
+                        tilgangskontroll
+                        som gir brukere muligheten til å styre tilgang til ressurser på en mer detaljert måte enn før,
+                        og det er det som er vår oppgave å få til.
+                    </p>
+                    <p>I versjon 3.16.0 av FINT-informasjonsmodellen (den nyligste versjonen pr våren 2024) finnes det 7
+                        domener: Administrasjon, Arkiv, Felles, Personvern, Ressurser, Utdanning og Økonomi. Hvert
+                        domene har sine egne pakker og inne i pakkene finner man ressursene vi skal styre tilgangen til.
+                        <br><br>
+                        Figurene under viser et utklipp av FINT-modellen. Her viser vi ressursene man finner i
+                        Økonomi-Regnskap.
+                        Vi skal kun styre tilgangen til hovedklasser (uthevet i figuren, som f.eks "Postering").<br><br>
+                        <a href="https://informasjonsmodell.felleskomponent.no">Trykk her for å se hele
+                            informasjonsmodellen</a>
 
-    <div class="container">
-        <section>
-            <h1>Test seksjon</h1>
-            <p>Informasjon kommer</p>
-    </div>
-</main>
+                    </p>
+                    <div id="infobilder">
+                        <img src="images/okonomi_regnskap.png" alt="Utklipp fra FINT-informasjonsmodellen"
+                            id="fint-utklipp">
+                        <img src="images/okonomi_regnskap_boks.png" alt="Avhuket Økonomi og Regnskap i FINT"
+                            id="fint-utklipp-boks">
+                    </div>
+
+                </section>
+            </div>
+
+            <div class=" container">
+                <section>
+                    <h2>Test seksjon</h2>
+                    <p>Informasjon kommer</p>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>

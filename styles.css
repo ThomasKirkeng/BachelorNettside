@@ -1,66 +1,155 @@
+@font-face {
+    font-family: 'Bugaki';
+    src: url('/fonts/Bugaki.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(196, 196, 196)
+    /*
+    background-image: url(images/bg3.png);
+    background-color: #4F6F52;
+    /* background: rgb(79, 111, 82);
+    background: linear-gradient(180deg, rgba(79, 111, 82, 1) 0%, rgba(41, 58, 43, 1) 70%, rgba(0, 0, 0, 1) 100%); */
 }
 
-header {
-    background-color: #b2d2dd;
-    color: white;
-    text-align: right;
-    padding: 2% 2%; 
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1A4D2E;
+    color: #E8DFCA;
+    padding: 2% 2%;
+    transition: top 0.3s;
+    z-index: 10;
 }
+
+nav {}
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start ;
+    justify-content: center;
 }
 
 nav ul li {
-    margin-left:6%;
+    margin: 0 5% 0 0;
 }
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: #F5EFE6;
+    font-family: 'Bugaki', 'Segoe UI', sans-serif;
     font-size: 30px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s; 
-    -webkit-text-stroke: 1px;
+    transition: color 0.3s;
+    -webkit-text-stroke: 0px;
     -webkit-text-stroke-color: black;
 }
 
 nav a:hover {
-    color: #ffa500; 
+    color: #f7b055;
 }
 
 .container {
-    max-width: 90%; 
-    margin: auto; 
-    padding: 0 5%;
-    min-height: 50vh;
+    background-color: #F5EFE6;
+    width: 75%;
+    margin: 0 5% 5% 5%;
+    padding: 2%;
+    min-height: auto;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px #868686;
 }
 
-
+.hvilkenside {
+    padding: 2.5% 0 2.5% 0;
+    font-family: 'Bugaki', 'Segoe UI', sans-serif;
+    font-size: 4.5vh;
+    text-align: center;
+}
 
 img {
     max-width: 100%;
     height: auto;
 }
 
-main {
-    max-width: 85%;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
     max-height: 100%;
-    margin: auto;
-    background-color: white
+    margin: 8% auto auto auto;
+    background-color: #E8DFCA;
+    border-radius: 25px;
 }
-h2{
+
+h2 {
     padding-top: 3%;
     margin: auto;
 }
 
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 21px;
+    position: relative;
+    z-index: 1;
+}
+
+#medlemmer {
+    display: flex;
+    align-items: center;
+}
+
+#medlemheader {
+    font-size: 2.5vh;
+}
+
+#medlemtekst {
+    padding: 0 0 0 1%;
+    font-size: medium;
+    align-content: center;
+}
+
+#gruppefoto {
+    padding: 0 1% 0 0;
+    width: 58%;
+}
+
+#novarilogo {
+    position: absolute;
+    top: 38%;
+    right: 30%;
+    z-index: 0;
+}
+
+#bakgrunn {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+#infobilder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#ER-diagram {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fint-utklipp-boks {
+    align-self: center;
+}
