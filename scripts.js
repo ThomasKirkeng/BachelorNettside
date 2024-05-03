@@ -6,12 +6,11 @@ window.addEventListener('scroll', function () {
 
     if (scrollTop > lastScrollTop) {
         // Scroll down
-        header.style.top = '-150px'; // Hides the header when scrolling down
+        header.style.top = '-150px';
     } else {
         // Scroll up
-        header.style.top = '0'; // Shows the header when scrolling up
+        header.style.top = '0';
     }
-
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
@@ -66,7 +65,7 @@ function onResize() {
         bgCanvas.width = window.innerWidth + (buffer * 2);
         bgCanvas.height = window.innerHeight + (buffer * 2);
 
-        render();
+        //render();
     }
 
 }
@@ -75,7 +74,9 @@ function init() {
     onResize();
     // create a listener for resize
     // cowboy's throttle plugin keeps this event from running hog wild
-    window.addEventListener('resize', Cowboy.throttle(200, onResize), false);
+    //window.addEventListener('resize', Cowboy.throttle(200, onResize), false);
 }
 
 init();
+
+
