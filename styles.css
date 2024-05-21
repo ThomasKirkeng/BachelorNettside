@@ -148,6 +148,39 @@ p {
     align-self: center;
 }
 
+#nedlasting {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 22px;
+    margin: 0 0 2% 0;
+
+}
+
+#demo {
+    margin-top: 0;
+    align-content: center;
+}
+
+.videolink {
+    display: none;
+    font-size: 22px;
+}
+
+@media(max-width: 1600px) {
+    #novarilogo {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+
+    .videolink {
+        display: block;
+    }
+}
+
 /* Herfra er det MOBILE VIEW */
 
 @media (max-width: 891px) {
@@ -162,7 +195,7 @@ p {
     }
 
     .wrapper {
-        margin-top: 45%;
+        margin-top: 55%;
         width: 90%;
     }
 

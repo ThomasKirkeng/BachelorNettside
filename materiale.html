@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovedside</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="patternizer.js"></script>
+</head>
+
+<canvas id="bakgrunn"></canvas>
+
+<body>
+    <header id="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="prosjekt.html">Prosjektblogg</a></li>
+                <li><a href="materiale.html">Prosjektmateriale</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <h1 class="hvilkenside">Prosjektmateriale</h1>
+            <div class="container">
+                <section>
+                    <h3>Nedlastbart materiell</h3>
+                    <p>På denne siden er våre dokumenter og presentasjoner gjennom prosjektet tilgjengelige for
+                        nedlasting. Her finner du også video av løsningen og en test med Cypress.
+                        <br><br>
+                    </p>
+                    <div id="nedlasting">
+                        <a href="/downloads/prosjektskisse.pdf" download>Prosjektskisse</a>
+                        <a href="/downloads/prosjektbeskrivelse.pdf" download>Prosjektbeskrivelse</a>
+                        <a href="/downloads/presentasjon1.pptx" download>Milepælspresentasjon 1</a>
+                        <a href="/downloads/presentasjon2.pptx" download>Milepælspresentasjon 2</a>
+                        <a href="/downloads/presentasjon3.pptx" download>Milepælspresentasjon 3</a>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <section>
+                    <h3>Video av løsningen</h3>
+                    <video id="demo" width="640" height="360" controls>
+                        <source src="/videos/test.mp4" type="video/mp4">
+                        Her skulle det egentlig vært en video, men den støttes ikke i nettleseren din.
+                    </video>
+                    <a class="videolink" href="#">Youtube-lenke til video av løsningen</a>
+                </section>
+                <section>
+                    <h3>Cypress test av løsningen</h3>
+                    <video id="cypresstest" width="640" height="360" controls>
+                        <source src="/videos/cypress-test.mp4" type="video/mp4">
+                        Her skulle det egentlig vært en video, men den støttes ikke i nettleseren din.
+                    </video>
+                    <a class="videolink" href="https://youtu.be/l3WnzfdNlA0">Youtube-lenke til video av en Cypress
+                        test</a>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
