@@ -104,10 +104,6 @@ p {
     align-items: center;
 }
 
-#medlemheader {
-    font-size: 2.5vh;
-}
-
 #medlemtekst {
     padding: 0 0 0 1%;
     font-size: medium;
@@ -115,9 +111,27 @@ p {
 }
 
 #gruppefoto {
-    padding: 0 1% 0 0;
-    width: 58%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
 }
+
+#gruppefoto img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    object-fit: cover;
+
+}
+
+#gruppefoto div {
+    max-width: 200px;
+    text-align: center;
+}
+
 
 #novarilogo {
     position: absolute;
@@ -148,7 +162,29 @@ p {
     align-self: center;
 }
 
-#nedlasting {
+.kafkabilder {}
+
+#kafka1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kafka2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+}
+
+#kafka3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+}
+
+.linker {
     display: flex;
     flex-direction: column;
     gap: 10px;
