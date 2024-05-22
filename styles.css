@@ -184,6 +184,12 @@ p {
     padding-bottom: 4%;
 }
 
+#getresources {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .linker {
     display: flex;
     flex-direction: column;
