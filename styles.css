@@ -222,6 +222,11 @@ p {
         display: none;
     }
 
+
+}
+
+@media (max-width: 1300px) {
+
     video {
         display: none;
     }
@@ -230,6 +235,7 @@ p {
         display: block;
     }
 }
+
 
 /* Herfra er det MOBILE VIEW */
 
